@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高校生でもわかるDiscordの使い方</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #f4f6fb;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #5865F2, #404EED);
+      color: white;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 16px auto 0;
+      font-size: 1rem;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 24px;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #404EED;
+      border-left: 6px solid #5865F2;
+      padding-left: 12px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 24px;
+    }
+
+    .summary {
+      background: #eef1ff;
+      border-left: 6px solid #5865F2;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+
+    .example {
+      background: #f7f7f7;
+      padding: 14px;
+      border-radius: 12px;
+      margin: 12px 0;
+    }
+
+    .warning {
+      background: #fff4e5;
+      border-left: 6px solid #ff9f1c;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+
+    .safe {
+      background: #eafff1;
+      border-left: 6px solid #2ecc71;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+
+    ul, ol {
+      padding-left: 1.4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .card strong {
+      color: #404EED;
+    }
+
+    a {
+      color: #404EED;
+      word-break: break-all;
+    }
+
+    footer {
+      background: #202225;
+      color: #ddd;
+      padding: 28px 20px;
+      margin-top: 40px;
+    }
+
+    footer div {
+      max-width: 960px;
+      margin: 0 auto;
+      font-size: 0.9rem;
+    }
+
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>高校生でもわかるDiscordの使い方</h1>
+  <p>
+    Discordは、友だち・勉強仲間・趣味の仲間と、テキスト・音声・ビデオでやり取りできるコミュニケーションアプリです。
+    このページでは、公式情報をもとに、初心者向けに使い方をまとめています。
+  </p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Discordとは？</h2>
+
+    <div class="summary">
+      <strong>一言でいうと：</strong><br>
+      Discordは「ネット上の部室」のようなものです。
+    </div>
+
+    <p>
+      Discordでは、テキスト、音声、ビデオを使って人と交流できます。
+      ゲーム、勉強、趣味、家族との連絡、プロジェクトなど、さまざまな目的で使われます。
+    </p>
+
+    <div class="example">
+      <strong>学校で例えると：</strong><br>
+      ・サーバー = 学校や部活の建物<br>
+      ・チャンネル = 教室や部室<br>
+      ・DM = 個別のLINEのような会話<br>
+      ・ボイスチャンネル = 通話できる部屋
+    </div>
+  </section>
+
+  <section>
+    <h2>2. まず覚える基本用語</h2>
+
+    <div class="grid">
+      <div class="card">
+        <strong>サーバー</strong>
+        <p>人が集まるコミュニティの場所です。勉強グループ、ゲーム仲間、趣味の集まりなどに使えます。</p>
+      </div>
+
+      <div class="card">
+        <strong>チャンネル</strong>
+        <p>サーバーの中にある会話部屋です。話題ごとに分けることで、情報を整理できます。</p>
+      </div>
+
+      <div class="card">
+        <strong>テキストチャンネル</strong>
+        <p>文字で会話する場所です。お知らせ、質問、雑談などに使います。</p>
+      </div>
+
+      <div class="card">
+        <strong>ボイスチャンネル</strong>
+        <p>音声で会話する場所です。入るだけで通話に参加できます。</p>
+      </div>
+
+      <div class="card">
+        <strong>DM</strong>
+        <p>個人同士のメッセージです。友だちとの1対1の会話に使います。</p>
+      </div>
+
+      <div class="card">
+        <strong>ロール</strong>
+        <p>メンバーに与える役割です。管理者、参加者、初心者などで権限を分けられます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Discordの始め方</h2>
+
+    <ol>
+      <li>Discordのアプリ、ブラウザ、またはスマホからアカウントを作成します。</li>
+      <li>メールアドレスなどを登録します。</li>
+      <li>必要に応じてアカウント認証を行います。</li>
+      <li>招待リンクからサーバーに参加します。</li>
+      <li>テキストチャンネルやボイスチャンネルで会話を始めます。</li>
+    </ol>
+
+    <div class="summary">
+      <strong>初心者はまず：</strong><br>
+      いきなりサーバーを作るより、まずは誰かのサーバーに参加して、画面の見方に慣れるのがおすすめです。
+    </div>
+  </section>
+
+  <section>
+    <h2>4. サーバーに参加する方法</h2>
+
+    <p>
+      Discordのサーバーには、招待リンクから参加できます。
+      友だちやコミュニティ運営者から招待リンクをもらい、そのリンクを開くと参加できます。
+    </p>
+
+    <div class="example">
+      <strong>流れ：</strong><br>
+      招待リンクを受け取る<br>
+      ↓<br>
+      Discordで開く<br>
+      ↓<br>
+      サーバーに参加する<br>
+      ↓<br>
+      ルールや案内を確認する
+    </div>
+
+    <div class="warning">
+      <strong>注意：</strong><br>
+      知らない人から送られてきた怪しい招待リンクは、すぐに開かないようにしましょう。
+      サーバー名や目的を確認してから参加することが大切です。
+    </div>
+  </section>
+
+  <section>
+    <h2>5. メッセージの使い方</h2>
+
+    <p>
+      テキストチャンネルでは、文字を入力してメッセージを送れます。
+      質問、相談、雑談、お知らせ確認などに使います。
+    </p>
+
+    <h3>よく使う操作</h3>
+    <ul>
+      <li>メッセージを送る</li>
+      <li>リアクションを付ける</li>
+      <li>返信する</li>
+      <li>メンションで相手を呼ぶ</li>
+      <li>画像やファイルを送る</li>
+    </ul>
+
+    <div class="example">
+      <strong>メンションの例：</strong><br>
+      <code>@名前</code> と入力すると、その人に通知を送るような形で呼びかけられます。
+    </div>
+  </section>
+
+  <section>
+    <h2>6. 音声通話・画面共有の使い方</h2>
+
+    <p>
+      ボイスチャンネルに入ると、音声で会話できます。
+      また、画面共有を使うと、自分の画面を相手に見せながら説明できます。
+    </p>
+
+    <div class="example">
+      <strong>使い道の例：</strong><br>
+      ・友だちと勉強する<br>
+      ・ゲーム中に会話する<br>
+      ・資料を見せながら説明する<br>
+      ・作業画面を見せて相談する
+    </div>
+
+    <div class="warning">
+      <strong>注意：</strong><br>
+      画面共有をすると、通知、名前、ブラウザのタブ、個人情報が見えることがあります。
+      共有前に不要な画面を閉じておきましょう。
+    </div>
+  </section>
+
+  <section>
+    <h2>7. 自分でサーバーを作る場合</h2>
+
+    <p>
+      Discordでは、自分でサーバーを作ることもできます。
+      勉強グループ、趣味コミュニティ、作業部屋、友だち用の場所などを作れます。
+    </p>
+
+    <h3>最初に作ると便利なチャンネル例</h3>
+    <ul>
+      <li>お知らせ</li>
+      <li>ルール</li>
+      <li>自己紹介</li>
+      <li>雑談</li>
+      <li>質問</li>
+      <li>作業報告</li>
+      <li>ボイスチャット</li>
+    </ul>
+
+    <div class="summary">
+      <strong>初心者向けの考え方：</strong><br>
+      サーバーは「人が迷わないように部屋を分ける」のが大切です。
+      何でも1つの場所に書くと、あとで情報が探しにくくなります。
+    </div>
+  </section>
+
+  <section>
+    <h2>8. ロールと権限</h2>
+
+    <p>
+      ロールは、サーバー内での役割や権限を分ける機能です。
+      たとえば「管理者」「メンバー」「初心者」などに分けられます。
+    </p>
+
+    <div class="warning">
+      <strong>重要：</strong><br>
+      公式ヘルプでは、Administrator権限は非常に強力な権限として説明されています。
+      すべての権限を持ち、チャンネル制限も回避できるため、信頼できる人だけに付ける必要があります。
+    </div>
+
+    <div class="example">
+      <strong>イメージ：</strong><br>
+      ・管理者 = 学校の先生や部長のように、部屋の設定を変えられる人<br>
+      ・メンバー = 普通に参加して会話する人<br>
+      ・見学者 = 一部の場所だけ見られる人
+    </div>
+  </section>
+
+  <section>
+    <h2>9. 安全に使うための設定</h2>
+
+    <p>
+      Discordには、ブロック、プライバシー設定、データ利用設定、プロフィール公開範囲など、安全に使うための機能があります。
+    </p>
+
+    <h3>最低限やっておきたいこと</h3>
+    <ul>
+      <li>知らない人からのDMに注意する</li>
+      <li>怪しいリンクを開かない</li>
+      <li>個人情報をプロフィールやチャットに書かない</li>
+      <li>困った相手はブロックする</li>
+      <li>プライバシー設定を確認する</li>
+      <li>画面共有前に個人情報が映らないか確認する</li>
+    </ul>
+
+    <div class="safe">
+      <strong>ブロック機能：</strong><br>
+      公式ヘルプでは、ユーザーのプロフィールからメニューを開き、Blockを選ぶことで相手をブロックできると説明されています。
+    </div>
+
+    <div class="safe">
+      <strong>データとプライバシー：</strong><br>
+      Discordのデータ利用に関する設定は、User Settings の Privacy & Safety から確認できます。
+    </div>
+
+    <div class="warning">
+      <strong>プロフィール公開範囲について：</strong><br>
+      Discord公式ヘルプでは、プロフィール公開範囲の設定は一部ユーザー向けにテスト中の場合があると説明されています。
+      そのため、全員の画面に同じ設定が表示されるとは限りません。
+    </div>
+  </section>
+
+  <section>
+    <h2>10. Family Centerについて</h2>
+
+    <p>
+      Discordには、保護者が10代の利用状況を理解するためのFamily Centerがあります。
+      公式情報では、保護者が参加サーバー、友だち、通話時間などを確認できる一方で、メッセージ内容は見られないと説明されています。
+    </p>
+
+    <div class="summary">
+      <strong>ポイント：</strong><br>
+      Family Centerは、監視というより「安全に使うための会話のきっかけ」を作る機能です。
+    </div>
+  </section>
+
+  <section>
+    <h2>11. 高校生向け：おすすめの使い方</h2>
+
+    <div class="grid">
+      <div class="card">
+        <strong>勉強用</strong>
+        <p>教科ごとにチャンネルを分けて、質問やノート共有に使う。</p>
+      </div>
+
+      <div class="card">
+        <strong>作業用</strong>
+        <p>作業報告チャンネルを作り、毎日の進捗を残す。</p>
+      </div>
+
+      <div class="card">
+        <strong>趣味用</strong>
+        <p>ゲーム、イラスト、音楽、読書など、好きなテーマで仲間と話す。</p>
+      </div>
+
+      <div class="card">
+        <strong>プロジェクト用</strong>
+        <p>文化祭、動画制作、プログラミング学習など、共同作業の連絡場所にする。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>12. まとめ</h2>
+
+    <div class="summary">
+      <strong>Discordは、ネット上の部室です。</strong><br><br>
+      サーバーを作り、チャンネルを分け、テキスト・音声・ビデオで仲間とやり取りできます。
+      便利な一方で、知らない人、怪しいリンク、個人情報、強すぎる権限には注意が必要です。
+    </div>
+
+    <p>
+      初心者はまず、参加しているサーバーのルールを読み、テキストチャンネルで会話に慣れ、
+      その後にボイスチャットや画面共有、自分のサーバー作成に挑戦すると理解しやすくなります。
+    </p>
+  </section>
+
+  <section>
+    <h2>公式情報リソース</h2>
+
+    <p>このページは、以下のDiscord公式情報を参考に作成しています。</p>
+
+    <ul>
+      <li><a href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord" target="_blank">Discord公式ヘルプ：Beginner's Guide to Discord</a></li>
+      <li><a href="https://support.discord.com/hc/en-us/articles/33023827550359-Discord-Server-Setup-Guide" target="_blank">Discord公式ヘルプ：Discord Server Setup Guide</a></li>
+      <li><a href="https://support.discord.com/hc/en-us/articles/360034842871-How-do-I-join-a-Server" target="_blank">Discord公式ヘルプ：How do I join a Server?</a></li>
+      <li><a href="https://support.discord.com/hc/en-us/articles/214836687-Discord-Roles-and-Permissions" target="_blank">Discord公式ヘルプ：Discord Roles and Permissions</a></li>
+      <li><a href="https://support.discord.com/hc/en-us/articles/217916488-Blocking-Privacy-Settings" target="_blank">Discord公式ヘルプ：Blocking & Privacy Settings</a></li>
+      <li><a href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls" target="_blank">Discord公式ヘルプ：Data Privacy Controls</a></li>
+      <li><a href="https://support.discord.com/hc/en-us/articles/38859942749463-Profile-Privacy-Setting-on-Discord" target="_blank">Discord公式ヘルプ：Profile Privacy Setting on Discord</a></li>
+      <li><a href="https://discord.com/safety/360044149331-what-is-discord" target="_blank">Discord公式 Safety Center：What is Discord?</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <p>
+      作成方針：Discord公式ヘルプおよびDiscord公式Safety Centerの情報をもとに、高校生にも理解しやすい表現へ整理。
+      非公式ブログ、口コミ、第三者サイトの情報は使用していません。
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
